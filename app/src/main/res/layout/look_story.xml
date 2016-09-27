@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#E7E7E7"
+    >
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/read_story_toolbar"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_back"
+            android:onClick="clickToBack"
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:text="故事详情"
+            android:textSize="20dp"
+            android:textColor="#fffff0"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_dot"
+            android:layout_marginLeft="70dp"
+            />
+    </android.support.v7.widget.Toolbar>
+    <ListView
+        android:id="@+id/read_story_listView"
+        android:layout_below="@id/read_story_toolbar"
+        android:layout_marginLeft="6dp"
+        android:layout_marginRight="6dp"
+        android:layout_marginTop="6dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="#ffff"
+        >
+    </ListView>
+
+
+</RelativeLayout>

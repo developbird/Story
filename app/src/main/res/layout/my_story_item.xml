@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingRight="10dp"
+    android:paddingLeft="10dp"
+    android:paddingBottom="5dp"
+    android:paddingTop="5dp"
+    >
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="30dp">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="match_parent"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        android:text="2014.05月"
+        />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="08日 10:16"
+        android:textColor="#8599B8"
+        />
+</LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:background="#E1E1E1"
+        android:text="111"
+        />
+    <TextView
+        android:id="@+id/ms_item_info"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textColor="#4b4845"
+        android:text="每到夏天，总让人想起无数回忆，我的小时候，就是中学之前的每个夏天都是在外婆家度过的每到夏天，总让人想起无数回忆，我的小时候，就是中学之前的每个夏天都是在外婆家度过的每到夏天，总让人想起无数回忆，我的小时候，就是中学之前的每个夏天都是在外婆家度过的"
+        android:ellipsize="marquee"
+        android:maxLines="4"
+        />
+    <ImageView
+        android:id="@+id/ms_item_pics"
+        android:layout_width="match_parent"
+        android:layout_height="180dp"
+        android:src="@mipmap/ic_launcher"
+        android:scaleType="fitXY"
+        />
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="30dp">
+        <ImageView
+            android:id="@+id/icon_talk"
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_talk"
+
+            />
+        <TextView
+            android:id="@+id/ms_item_comment"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="200+"
+            android:gravity="center"
+            android:layout_marginLeft="30dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:src="@drawable/icon_heart"
+            android:layout_marginLeft="70dp"
+            />
+        <TextView
+            android:id="@+id/ms_item_readcount"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:text="200+"
+            android:gravity="center"
+            android:layout_marginLeft="100dp"
+            />
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="match_parent"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/icon_share"
+            android:layout_marginRight="-5dp"
+            />
+    </RelativeLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/new_story_Toolbar"
+        android:background="@drawable/title_bg"
+        android:layout_width="match_parent"
+        android:layout_height="60dp">
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_back"
+            android:onClick="back"
+
+            />
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="40dp"
+            android:layout_marginLeft="100dp"
+            android:text="新的故事"
+            android:textSize="20dp"
+            android:textColor="#fffff0"
+            android:gravity="center"
+            />
+        <ImageView
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:src="@drawable/icon_send"
+            android:layout_marginLeft="90dp"
+            android:onClick="new_story_submit"
+            />
+    </android.support.v7.widget.Toolbar>
+
+
+    <EditText
+        android:layout_below="@id/new_story_Toolbar"
+        android:id="@+id/new_story_EditText"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="10dp"
+        android:background="@null"
+        android:hint="请输入文字"
+        />
+    <ListView
+        android:layout_width="match_parent"
+        android:layout_height="450dp"
+        android:layout_below="@id/new_story_EditText"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        ></ListView>
+    <LinearLayout
+        android:id="@+id/new_story_linear"
+        android:layout_alignParentBottom="true"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:background="#101010"
+        >
+    <ImageView
+        android:onClick="clickToImgLib"
+        android:layout_width="0dp"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:src="@mipmap/ic_launcher"
+        />
+        <ImageView
+            android:onClick="clickToCamera"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:src="@mipmap/ic_camera"
+            />
+
+    </LinearLayout>
+
+</RelativeLayout>
